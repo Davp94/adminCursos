@@ -43,7 +43,7 @@ public class Persona implements Serializable{
 	
 	@PrePersist
 	public void prePersist() {
-		fechNac=new Date();
+		createdAt=new Date();
 	}
 	
 	private static final long serialVersionUID = 1L;
