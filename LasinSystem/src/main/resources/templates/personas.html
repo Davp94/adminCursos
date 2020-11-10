@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+<table th:if="${!personas.isEmpty()}">
+	<thead>
+	<tr>
+	<th>Nombre</th>
+	<th>Apellido1</th>
+	<th>Apellido2</th>
+	<th>Ci</th>
+	<th>Correo</th>
+	</tr>
+	</thead>
+	<tbody>
+		<tr th:each="persona: ${personas}">
+			<td th:text="${persona.nombres}"></td>
+			<td th:text="${persona.apellido1}"></td>
+			<td th:text="${persona.apellido2}"></td>
+			<td th:text="${persona.ci}"></td>
+			<td th:text="${persona.correo}"></td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>

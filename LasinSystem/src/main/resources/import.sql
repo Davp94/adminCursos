@@ -1,0 +1,12 @@
+INSERT INTO persona (ci,nombres,apellido1,apellido2,correo,telefono,password)VALUES('123','Cayo','Nina','Tarqui','cayo@gmail.com','77712345','123');
+INSERT INTO persona (ci,nombres,apellido1,apellido2,correo,telefono,password)VALUES('456','Pamela','Uruchi','Uruchi','pame@gmail.com','5555555','456');
+INSERT INTO persona (ci,nombres,apellido1,apellido2,correo,telefono,password)VALUES('789','Carla','Loza','Loza','caya@gmail.com','8888888','789');
+INSERT INTO persona (ci,nombres,apellido1,apellido2,correo,telefono,password)VALUES('321','Arnaldo','Mendoza','Mendoza','arnaldo@gmail.com','9999999','321');
+INSERT INTO persona (ci,nombres,apellido1,apellido2,correo,telefono,password)VALUES('654','Adalid','Limachi','Limachi','adalid@gmail.com','00000000','654');
+INSERT INTO persona (ci,nombres,apellido1,apellido2,correo,telefono,password)VALUES('987','David','Villca','Pacheco','david@gmail.com','6666666','987');
+INSERT INTO rol(tipo)VALUES('ADMIN');
+INSERT INTO rol(tipo)VALUES('DOCENTE');
+INSERT INTO usuario_rol(persona_id,rol_id)VALUES(1,1);
+INSERT INTO usuario_rol(persona_id,rol_id)VALUES(2,1);
+INSERT INTO usuario_rol(persona_id,rol_id)VALUES(3,2);
+INSERT INTO usuario_rol(persona_id,rol_id)VALUES(4,2);
