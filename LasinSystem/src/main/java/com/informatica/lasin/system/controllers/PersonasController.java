@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import com.informatica.lasin.system.dao.IPersonaDao;
 import com.informatica.lasin.system.models.Persona;
+import com.informatica.lasin.system.services.IPersonaService;
 
 
 @Controller
@@ -16,6 +17,9 @@ public class PersonasController {
 	
 	@Autowired
 	private IPersonaDao personaDao;
+	
+	@Autowired
+	private IPersonaService personaService;
 	
 	@GetMapping({"/",""})
 	public String index(Model model) {
@@ -29,5 +33,12 @@ public class PersonasController {
 		model.addAttribute("personas", personas);
 		return "personas";
 	}
+	
+//	@GetMapping("/cursos")
+//	public String listaCursos(Model model) {
+//		List<Persona> c=(List<Persona>) personaDao.findAll();
+//		model.addAttribute("personas", personas);
+//		return "cursos";
+//	}
 
 }
