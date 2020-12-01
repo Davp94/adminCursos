@@ -3,6 +3,7 @@ package com.informatica.lasin.system.services;
 import java.util.List;
 
 import com.informatica.lasin.system.dtos.AlumnoCursoDTO;
+import com.informatica.lasin.system.dtos.AlumnoDTO;
 import com.informatica.lasin.system.dtos.PersonaDTO;
 import com.informatica.lasin.system.models.Admin;
 import com.informatica.lasin.system.models.Alumno;
@@ -22,5 +23,7 @@ public interface IPersonaService {
 	public Admin registrarAdmin(Admin admin);
 	
 	public List<AlumnoCursoDTO> alumnosPorCurso(Long idCurso);
+
+	public List<AlumnoDTO> listaDeAlumnos();
 
 }

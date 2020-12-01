@@ -11,4 +11,8 @@ public class AlumnoDTO {
 
 	private String ci;	
 	
+	private String tipo;
+	
+	private String nombre;
+	
 }
